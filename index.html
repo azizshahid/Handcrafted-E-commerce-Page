@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handmade Treasures - Discover Unique Handcrafted Goods</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header id="header">
+      <nav class="container">
+        <a href="/" class="logo">Handmade Treasures</a>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#shop">Shop</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="search-container">
+          <input
+            type="search"
+            placeholder="Search for anything"
+            aria-label="Search"
+            class="search-input"
+          />
+          <button class="search-btn">🔍</button>
+        </div>
+
+        <div class="nav-icons">
+          <a href="/favorites" aria-label="Favorites" class="nav-icon">❤️</a>
+          <a href="/cart" aria-label="Shopping Cart" class="nav-icon">🛒</a>
+          <a href="/account" aria-label="User Account" class="nav-icon">👤</a>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+          <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+            <h1>
+              Discover Unique <span class="highlight">Handmade Treasures</span>
+            </h1>
+            <p class="hero-subtitle">
+              Bringing artisans and buyers together to celebrate the beauty of
+              handcrafted goods. Find one-of-a-kind pieces that tell a story.
+            </p>
+            <div class="hero-buttons">
+              <a href="#shop" class="btn btn-primary">Shop Now</a>
+              <a href="#become-seller" class="btn btn-secondary"
+                >Become a Seller</a
+              >
+            </div>
+          </div>
+          <div
+            class="hero-image"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img
+              src="./Images/hero-image/Warm Artisan Workspace.png"
+              alt="Handmade crafts and artisan workspace"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section class="featured-products" data-aos="fade-up">
+        <div class="container">
+          <div class="section-header">
+            <h2>Featured Products</h2>
+            <p>Handpicked treasures from our talented artisans</p>
+          </div>
+          <div class="product-grid">
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="product-image">
+                <img
+                  src="./Images/featured-products/Handcrafted Ceramic Elegance.png"
+                  alt="Handcrafted Ceramic Vase"
+                />
+                <button class="wishlist-btn">❤️</button>
+              </div>
+              <div class="product-info">
+                <h3>Handcrafted Ceramic Vase</h3>
+                <p class="artisan">By Sarah Chen</p>
+                <p class="description">Beautiful artisan pottery</p>
+                <div class="rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-text">(4.8)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">$49.99</span>
+                  <button class="btn btn-small">View Details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="product-image">
+                <img
+                  src="./Images/featured-products/Bohemian Interior Serenity1.png"
+                  alt="Woven Macrame Wall Hanging"
+                />
+                <button class="wishlist-btn">❤️</button>
+              </div>
+              <div class="product-info">
+                Handcrafted Ceramic Vase
+                <h3>Woven Macrame Wall Hanging</h3>
+                <p class="artisan">By Maria Rodriguez</p>
+                <p class="description">Boho home decor piece</p>
+                <div class="rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-text">(4.9)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">$39.99</span>
+                  <button class="btn btn-small">View Details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="product-image">
+                <img
+                  src="./Images/featured-products/Handcrafted Silver Ring.png"
+                  alt="Hand-forged Silver Ring"
+                />
+                <button class="wishlist-btn">❤️</button>
+              </div>
+              <div class="product-info">
+                <h3>Hand-forged Silver Ring</h3>
+                <p class="artisan">By David Kim</p>
+                <p class="description">Unique artisan jewelry</p>
+                <div class="rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-text">(5.0)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">$89.99</span>
+                  <button class="btn btn-small">View Details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="product-image">
+                <img
+                  src="./Images/featured-products/Botanical Tote in Sunlit Entryway.png"
+                  alt="Organic Cotton Tote Bag"
+                />
+                <button class="wishlist-btn">❤️</button>
+              </div>
+              <div class="product-info">
+                <h3>Organic Cotton Tote Bag</h3>
+                <p class="artisan">By Emma Thompson</p>
+                <p class="description">Eco-friendly hand-printed</p>
+                <div class="rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-text">(4.7)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">$24.99</span>
+                  <button class="btn btn-small">View Details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="500">
+              <div class="product-image">
+                <img
+                  src="./Images/featured-products/Handwoven Wool Blanket.jpg"
+                  alt="Handwoven-Wool-Blanket"
+                />
+                <button class="wishlist-btn">❤️</button>
+              </div>
+              <div class="product-info">
+                <h3>Handwoven Blanket</h3>
+                <p class="artisan">By Grace Chen</p>
+                <p class="description">Beautiful artisan stationery</p>
+                <div class="rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-text">(4.5)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">$39.99</span>
+                  <button class="btn btn-small">View Details</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="600">
+              <div class="product-image">
+                <img
+                  src="./Images/featured-products/Hand-painted Ceramic Tea Set.jpg"
+                  alt="Handcrafted Ceramic Kitchenware"
+                />
+                <button class="wishlist-btn">❤️</button>
+              </div>
+              <div class="product-info">
+                <h3>Hand-painted Ceramic Tea Set</h3>
+                <p class="artisan">By Sarah Chen</p>
+                <p class="description">Beautiful artisan pottery</p>
+                <div class="rating">
+                  <span class="stars">⭐⭐⭐⭐⭐</span>
+                  <span class="rating-text">(4.8)</span>
+                </div>
+                <div class="product-footer">
+                  <span class="price">$49.99</span>
+                  <button class="btn btn-small">View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shop by Category -->
+      <section id="shop" class="categories" data-aos="fade-up">
+        <div class="container">
+          <div class="section-header">
+            <h2>Shop by Category</h2>
+            <p>Explore our curated collections</p>
+          </div>
+          <div class="category-grid">
+            <div
+              class="category-card"
+              data-aos="flip-left"
+              data-aos-delay="100"
+            >
+              <img
+                src="./Images/category/Handmade Jewelry Display.png"
+                alt="Jewelry"
+              />
+              <div class="category-overlay">
+                <h3>Jewelry</h3>
+                <p>250+ items</p>
+              </div>
+            </div>
+            <div
+              class="category-card"
+              data-aos="flip-left"
+              data-aos-delay="200"
+            >
+              <img
+                src="./Images/category/Bohemian Dresses in Sunlight.png"
+                alt="Clothing"
+              />
+              <div class="category-overlay">
+                <h3>Clothing</h3>
+                <p>180+ items</p>
+              </div>
+            </div>
+            <div
+              class="category-card"
+              data-aos="flip-left"
+              data-aos-delay="300"
+            >
+              <img
+                src="./Images/category/Cozy Ceramic Corner1.png"
+                alt="Home Decor"
+              />
+              <div class="category-overlay">
+                <h3>Home Decor</h3>
+                <p>320+ items</p>
+              </div>
+            </div>
+            <div
+              class="category-card"
+              data-aos="flip-left"
+              data-aos-delay="400"
+            >
+              <img
+                src="./Images/category/Vibrant Artisan Canvas1.png"
+                alt="Art"
+              />
+              <div class="category-overlay">
+                <h3>Art</h3>
+                <p>150+ items</p>
+              </div>
+            </div>
+            <div
+              class="category-card aos-init aos-animate"
+              data-aos="flip-left"
+              data-aos-delay="500"
+            >
+              <img
+                src="./Images/category/kitchen-ware-handmade-ceramic1.jpg"
+                alt="handmade-ceramic-kitchenware"
+              />
+              <div class="category-overlay">
+                <h3>Kitchenware</h3>
+                <p>150+ items</p>
+              </div>
+            </div>
+            <div
+              class="category-card aos-init aos-animate"
+              data-aos="flip-left"
+              data-aos-delay="600"
+            >
+              <img
+                src="./Images/category/Artisan Stationery Elegance.png"
+                alt="Elegante-Artisan-Stationery"
+              />
+              <div class="category-overlay">
+                <h3>Artisan Stationery</h3>
+                <p>125+ items</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Preview -->
+      <section id="about" class="about-preview" data-aos="fade-up">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-image" data-aos="fade-right">
+              <img
+                src="./Images/about-us/Artisan at Pottery Wheel.png "
+                alt="Artisan at work"
+              />
+            </div>
+            <div class="about-text" data-aos="fade-left">
+              <h2>Our Story</h2>
+              <p>
+                Handmade Treasures was born from a passion for connecting
+                talented artisans with people who appreciate the beauty and
+                uniqueness of handcrafted goods. We believe every piece tells a
+                story, and every purchase supports a dream.
+              </p>
+              <p>
+                From our humble beginnings in 2020, we've grown into a thriving
+                community of over 1,000 artisans from around the world, each
+                bringing their unique skills and cultural heritage to our
+                marketplace.
+              </p>
+              <a href="/about" class="btn btn-secondary">Learn More About Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq-section" data-aos="fade-up">
+        <div class="container">
+          <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions</p>
+          </div>
+          <div class="faq-container">
+            <div class="faq-item">
+              <button class="faq-question">
+                How do I place an order?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Simply browse our categories, select your desired items, and
+                  click "Add to Cart." Once you're ready, proceed to checkout
+                  and follow the instructions to complete your purchase.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                What are the shipping options?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We offer standard and express shipping options. Shipping rates
+                  and times vary by location and will be calculated at checkout.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                Can I return or exchange an item?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes, we have a 30-day return policy for eligible items. Visit
+                  our Return Policy page for details.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                What payment methods do you accept?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We accept various payment methods, including major credit and
+                  debit cards, PayPal, and other secure payment options.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                How can I track my order?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Once your order is shipped, you'll receive a tracking number
+                  via email. You can use this number to track your package on
+                  our website.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question">
+                How do I become a seller on Handmade Treasures?
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We're always excited to welcome new artisans! Click "Become a
+                  Seller" on our homepage to start your application process.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-contact">
+            <a href="#contact" class="btn btn-primary">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Signup -->
+      <section class="newsletter" data-aos="fade-up">
+        <div class="container">
+          <div class="newsletter-content">
+            <h2>Stay Connected</h2>
+            <p>
+              Subscribe to our newsletter and be the first to discover new
+              artisans, exclusive collections, and special offers.
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Handmade Treasures</h3>
+            <p>
+              Connecting artisans with craft lovers worldwide, celebrating the
+              beauty of handmade goods.
+            </p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook">📘</a>
+              <a href="#" aria-label="Instagram">📷</a>
+              <a href="#" aria-label="Twitter">🐦</a>
+              <a href="#" aria-label="Pinterest">📌</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <div class="footer-links">
+              <a href="/about">About Us</a>
+              <a href="/shop">Shop</a>
+              <a href="#faq">FAQ</a>
+              <a href="/contact">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>For Sellers</h4>
+            <div class="footer-links">
+              <a href="/become-seller">Become a Seller</a>
+              <a href="/seller-guide">Seller Guide</a>
+              <a href="/seller-support">Seller Support</a>
+              <a href="/terms">Terms of Service</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>We Accept</h4>
+            <div class="payment-methods">
+              <span class="payment-icon">💳 Visa</span>
+              <span class="payment-icon">💳 Mastercard</span>
+              <span class="payment-icon">🅿️ PayPal</span>
+              <span class="payment-icon">🍎 Apple Pay</span>
+            </div>
+            <p class="secure-text">Secure payments powered by Stripe</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Handmade Treasures. All rights reserved. Made with ❤️
+            for artisans worldwide.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
