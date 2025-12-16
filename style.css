@@ -103,6 +103,23 @@ header {
   right: 0;
   z-index: 1000;
   transition: all 0.3s ease;
+  border-bottom: 1px solid #eee;
+  padding: 14px 14px;
+}
+
+/*.nav-icons {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}*/
+
+header .icon:hover {
+  background: #eaeaea;
 }
 
 header.scrolled {
@@ -115,6 +132,14 @@ nav {
   justify-content: space-between;
   padding: 1rem 20px;
   gap: 2rem;
+}
+
+nav.container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 90vw;
+  margin: 0px 10px;
+  padding: 0px 10px;
 }
 
 .logo {
